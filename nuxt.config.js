@@ -1,4 +1,5 @@
-
+const nodeExternals = require('webpack-node-externals')
+require('dotenv').config()
 export default {
   mode: 'universal',
   /*
@@ -8,7 +9,7 @@ export default {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' },
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
@@ -24,12 +25,15 @@ export default {
   ** Global CSS
   */
   css: [
+    '@fortawesome/fontawesome-svg-core/styles.css',
     '~/assets/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vue-fontawesome'},
+    { src: '~/plugins/vue-star-rating'},
   ],
   /*
   ** Nuxt.js dev-modules
@@ -63,9 +67,10 @@ export default {
     */
     extend (config, ctx) {
     },
-    server: {
-      port: process.env.PORT, // default: 3000
-      host: process.env.HOST, // default: localhost
-    }
+
+  },
+  server: {
+    port: process.env.PORT, // default: 3000
+    host: process.env.HOST, // default: localhost
   }
 }

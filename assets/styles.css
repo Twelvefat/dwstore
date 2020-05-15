@@ -1,3 +1,15 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #F6F8FF;
+}
+
+.grey-5{
+  color: #E0E0E0;
+}
+.grey-2 {
+  color: #4F4F4F;
+}
+
+.orange-1 {
+  color: #F2783F;
 }
