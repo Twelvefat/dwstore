@@ -20,12 +20,14 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#1C56D9' },
   /*
   ** Global CSS
   */
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
+    'slick-carousel/slick/slick.css',
+    'slick-carousel/slick/slick-theme.css',
     '~/assets/styles.css'
   ],
   /*
@@ -66,6 +68,13 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/^vue-slick/]
+          })
+        ]
+      }
     },
 
   },

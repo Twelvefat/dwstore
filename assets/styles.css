@@ -2,14 +2,83 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #F6F8FF;
 }
+.page-enter-active,
+.page-leave-active {
+    transition-property: opacity;
+    transition-timing-function: linear;
+    transition-duration: 500ms;
+}
+
+.page-enter,
+.page-leave-to {
+    opacity: 0;
+}
 
 .grey-5{
   color: #E0E0E0;
 }
+
+.grey-4{
+  color: #BDBDBD;
+}
+
+.grey-3{
+  color: #828282;
+}
+
 .grey-2 {
   color: #4F4F4F;
 }
 
 .orange-1 {
   color: #F2783F;
+}
+
+
+.label-discount {
+  position: relative;
+  display: block;
+  background-color: #60C887;
+  min-width: 50px;
+  height: 25px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  margin: 0.15rem 0;
+}
+
+.label-new {
+  position: relative;
+  display: block;
+  background-color: #F2783F;
+  min-width: 50px;
+  height: 25px;
+  border-radius: 1.25rem;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  color: white;
+  text-align: center;
+  margin: 0.15rem 0;
+  font-style: italic;
+}
+
+.mark {
+  color:#4F4F4F;
+  font-size:1.25rem;
+  font-weight: 700;
+  background-color: #F6F8FF;
+  overflow: hidden;
+}
+
+.mark:after {
+    content:"";
+    display: inline-block;
+    height: 1px;
+    vertical-align: middle;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid #BDBDBD;
 }

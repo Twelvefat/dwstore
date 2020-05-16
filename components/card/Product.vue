@@ -9,10 +9,12 @@
                     <p>New</p>
                   </div>
               </div>
-              <img src="https://cf.shopee.co.id/file/fb4f1f1ab0c6bb8754dc4884d0b36dfa" class="img-card" />
+              <nuxt-link :to="'/product/detail'">
+                <img src="https://cf.shopee.co.id/file/fb4f1f1ab0c6bb8754dc4884d0b36dfa" class="img-card" />
+              </nuxt-link>
           </div>
           <div class="card-body">
-              <p class="title-product grey-2"> Baju langka supreme hanya ada 1 didunia </p>
+              <nuxt-link :to="'/product/detail'"><p class="title-product grey-2"> Baju langka supreme hanya ada 1 didunia </p></nuxt-link>
               <p class="price-product orange-1"> Rp 150.000
                 <br/>
                 <span class="discount-product grey-5"> Rp 250.000 </span>
@@ -51,41 +53,16 @@ export default {
 
 <style scoped>
 
+    a {
+      text-decoration: none;
+    }
+
     .label-container {
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 10px;
         margin-right: 10px;
-    }
-
-    .label-discount {
-      position: relative;
-      display: block;
-      background-color: #60C887;
-      min-width: 50px;
-      height: 25px;
-      border-radius: 1.25rem;
-      padding: 0.25rem 0.625rem;
-      font-size: 0.75rem;
-      color: white;
-      text-align: center;
-      margin: 0.15rem 0;
-    }
-
-    .label-new {
-      position: relative;
-      display: block;
-      background-color: #F2783F;
-      min-width: 50px;
-      height: 25px;
-      border-radius: 1.25rem;
-      padding: 0.25rem 0.625rem;
-      font-size: 0.75rem;
-      color: white;
-      text-align: center;
-      margin: 0.15rem 0;
-      font-style: italic;
     }
 
     .card {
