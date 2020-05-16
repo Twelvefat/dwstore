@@ -31,11 +31,11 @@
                 </client-only>
               </p>
               <b-row class="no-gutters">
-                <b-col class="mt-2 text-center">
-                    <nuxt-link :to="''" class="btn btn-detail"> Detail </nuxt-link>
+                <b-col class="mt-1 text-center p-1">
+                    <nuxt-link :to="''" class="btn btn-blue"> Detail </nuxt-link>
                 </b-col>
-                <b-col class="mt-2 text-center">
-                    <nuxt-link :to="''" class="btn btn-buy"> Buy </nuxt-link>
+                <b-col class="mt-1 text-center p-1">
+                    <nuxt-link :to="''" class="btn btn-blue active"> Buy </nuxt-link>
                 </b-col>
               </b-row>
           </div>
@@ -106,29 +106,6 @@ export default {
         font-weight: normal;
         font-size: 0.75rem;
         text-decoration: line-through;
-    }
-
-    .btn {
-      width: 90%;
-      /* min-width: 6rem; */
-    }
-
-    .btn-detail {
-        border: 1px solid #1C56D9;
-        color: #1C56D9;
-        background-color: white;
-        padding: 0.38rem 1.9rem;
-        border-radius: 1.25rem;
-        font-size: 0.75rem;
-    }
-
-    .btn-buy {
-        border: 1px solid transparent;
-        color: white;
-        background-color: #1C56D9;
-        padding: 0.38rem 1.9rem;
-        border-radius: 1.25rem;
-        font-size: 0.75rem;
     }
 
 </style>

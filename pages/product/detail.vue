@@ -1,5 +1,5 @@
 <template>
-  <b-container style="overflow-x:hidden">
+  <b-container>
     <b-row class="mt-5">
       <b-col md="4" sm="12" cols="12">
         <client-only>
@@ -146,8 +146,8 @@
         <h5 class="grey-2"> Rekomendasi </h5>
       </b-col>
     </b-row>
-    <b-row class="mt-5">
-        <b-col class="mt-3" md="3" cols="6" v-for="n in 4" :key="n">
+    <b-row class="mt-5 no-gutters">
+        <b-col class="mt-3 p-1" md="3" cols="6" v-for="n in 4" :key="n">
           <Product />
         </b-col>
     </b-row>

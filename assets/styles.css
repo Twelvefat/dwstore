@@ -1,7 +1,9 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #F6F8FF;
+  overflow-x: hidden;
 }
+
 .page-enter-active,
 .page-leave-active {
     transition-property: opacity;
@@ -13,6 +15,7 @@ body {
 .page-leave-to {
     opacity: 0;
 }
+
 
 .grey-5{
   color: #E0E0E0;
@@ -30,9 +33,18 @@ body {
   color: #4F4F4F;
 }
 
+.dark-blue {
+  color: #2B42A3;
+}
+
+.blue {
+  color: #1C56D9
+}
+
 .orange-1 {
   color: #F2783F;
 }
+
 
 
 .label-discount {
@@ -81,4 +93,30 @@ body {
     margin-right: -100%;
     margin-left: 10px;
     border-top: 1px solid #BDBDBD;
+}
+
+.btn {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-blue {
+  border: 1px solid #1C56D9;
+  color: #1C56D9;
+  background-color: white;
+  padding: 0.38rem 1.9rem;
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.btn-blue.active {
+border: 1px solid transparent;
+color: white;
+background-color: #1C56D9;
+padding: 0.38rem 1.9rem;
+border-radius: 1.25rem;
+font-size: 0.75rem;
 }
