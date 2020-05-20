@@ -24,8 +24,8 @@
           size="sm"
           placeholder="Type Something"
         ></b-form-input>
-        <div class="button-search">
-          <nuxt-link :to="'/search'">
+        <div>
+          <nuxt-link :to="'/search'" class="button-search">
             <font-awesome-icon :icon="['fas', 'search']" :style="{color:'white', fontSize:14}" />
           </nuxt-link>
         </div>
