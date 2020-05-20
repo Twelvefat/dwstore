@@ -124,6 +124,7 @@ export default {
   .input-box {
     display: inline-block;
     width: 100%;
+    max-width: 100px;
     vertical-align: middle;
     background-color: white;
     background-clip: padding-box;
